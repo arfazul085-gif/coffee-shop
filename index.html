@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e7">
+  <meta name="description" content="Take a little pause at Brew Bliss Cafe. Thoughtful coffee, fresh pastries, and a warm seat are waiting.">
+  <title>Brew Bliss Cafe | Coffee, made for your moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Brew Bliss Cafe home">
+      <span class="brand-mark" aria-hidden="true">b.</span>
+      <span class="brand-name">Brew Bliss <span>Cafe</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#about">Our story</a>
+      <a href="#menu">The menu</a>
+      <a href="#contact">Find us</a>
+      <a class="nav-cta" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=2200&q=85" alt="A welcoming neighborhood cafe with warm light and a long wooden counter">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> Your neighborhood coffee pause</p>
+        <h1 id="hero-title">Brew Bliss<br><em>Cafe</em></h1>
+        <p class="hero-copy">Good coffee. A little breathing room.<br class="desktop-break"> Your new favorite corner of the day.</p>
+        <a class="button button-light" href="#menu">Find your new favorite <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-note"><span>Thoughtfully brewed</span><span class="note-line"></span><span>Since 2024</span></div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to our story"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="intro section-pad" id="about" aria-labelledby="about-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little about us</p>
+        <h2 id="about-title">A good day can<br>start <em>right here.</em></h2>
+        <p class="body-copy">Brew Bliss Cafe is a neighborhood gathering place for slow mornings, familiar faces, and coffee worth lingering over. We pair carefully made drinks with friendly service and freshly baked treats.</p>
+        <p class="body-copy">Drop in for your everyday latte, meet a friend over something sweet, or simply take a moment for yourself. There’s always room at our table.</p>
+        <a class="text-link" href="#contact">Come say hello <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="intro-photo-wrap">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=85" alt="Freshly made coffee and pastries on a cafe table" loading="lazy">
+        <div class="photo-stamp"><span>Made with</span><strong>care<br>& coffee</strong><span>Every day</span></div>
+        <p class="photo-caption">A warm welcome, in every cup.</p>
+      </div>
+      <div class="service-strip" aria-label="Cafe services">
+        <div><span class="service-number">01</span><span>Espresso, brewed<br>with intention</span></div>
+        <div><span class="service-number">02</span><span>Fresh pastries<br>every morning</span></div>
+        <div><span class="service-number">03</span><span>A cozy corner<br>for everyone</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> From our little coffee bar</p>
+          <h2 id="menu-title">Made for your<br><em>kind of day.</em></h2>
+        </div>
+        <p class="menu-intro">A few house favorites to make the choosing easy. Every cup is made fresh, just for you.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="A creamy cappuccino with latte art" loading="lazy"><span class="menu-tag">House favorite</span></div>
+          <div class="menu-card-content"><div class="menu-title-row"><h3>Honey Oat Latte</h3><span class="price">$5.25</span></div><p>Double espresso, silky oat milk, and a touch of local honey.</p><button class="order-button" type="button" data-item="Honey Oat Latte">Order now <span aria-hidden="true">↗</span></button><p class="order-feedback" aria-live="polite"></p></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85" alt="A freshly poured iced coffee topped with milk" loading="lazy"><span class="menu-tag">Cool & creamy</span></div>
+          <div class="menu-card-content"><div class="menu-title-row"><h3>Vanilla Cloud Cold Brew</h3><span class="price">$5.75</span></div><p>Slow-steeped coffee, a hint of vanilla, and soft cream.</p><button class="order-button" type="button" data-item="Vanilla Cloud Cold Brew">Order now <span aria-hidden="true">↗</span></button><p class="order-feedback" aria-live="polite"></p></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=900&q=85" alt="A small espresso served beside a cup of coffee" loading="lazy"><span class="menu-tag">Simple & bold</span></div>
+          <div class="menu-card-content"><div class="menu-title-row"><h3>Little Double Espresso</h3><span class="price">$3.50</span></div><p>Two rich shots, pulled fresh from our rotating house beans.</p><button class="order-button" type="button" data-item="Little Double Espresso">Order now <span aria-hidden="true">↗</span></button><p class="order-feedback" aria-live="polite"></p></div>
+        </article>
+      </div>
+      <p class="menu-footnote">Sample menu and prices. Ask us about dairy-free options and today’s pastry.</p>
+    </section>
+
+    <section class="visit-band" aria-label="Visit Brew Bliss Cafe">
+      <div class="visit-mark" aria-hidden="true">b.</div>
+      <p>Make a little room<br>for <em>something good.</em></p>
+      <a class="button button-dark" href="#contact">Plan a visit <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-details">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> We’ll put the kettle on</p>
+        <h2 id="contact-title">Come on<br><em>over.</em></h2>
+        <p class="body-copy">Questions, kind words, or just want to say hi? Send us a note. Better yet, stop by for a cup.</p>
+        <div class="detail-block"><span class="detail-label">Find our front door</span><p>123 Sample Street<br>Your Town, ST 00000</p></div>
+        <div class="detail-block"><span class="detail-label">Our little hours</span><p>Monday – Friday, 7 am – 4 pm<br>Saturday – Sunday, 8 am – 3 pm</p></div>
+        <div class="detail-block"><span class="detail-label">Say hello</span><p><a href="mailto:hello@brewbliss.example">hello@brewbliss.example</a><br><a href="tel:+15550140123">(555) 014-0123</a></p></div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <p class="form-heading">Leave us a little note.</p>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Jamie Rivera" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="message">What’s on your mind?</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        <button class="button button-dark submit-button" type="submit">Send your note <span aria-hidden="true">↗</span></button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        <p class="form-note">Demo form only. Your message won’t be sent.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">b.</span><span class="brand-name">Brew Bliss <span>Cafe</span></span></a>
+    <p>Good coffee, good company, every day.</p>
+    <a class="back-top" href="#home">Back to top ↑</a>
+    <small>© <span id="year">2024</span> Brew Bliss Cafe. Sample cafe details.</small>
+  </footer>
+</body>
+</html>
